@@ -1,0 +1,33 @@
+{
+    "major": "Computer Science",
+    "fromCollege": "Northern Virginia Community College",
+    "toCollege": "Virginia Tech",
+    "requirements": {
+      "minGPA": 3.2,
+      "minCredits": 60,
+      "requiredCourses": ["ENG 111", "MTH 161", "MTH 162", "CSC 201", "CSC 202", "PHY 241"]
+    },
+    "semesters": [
+      {
+        "semester": "Semester 1",
+        "recommendedCourses": ["ENG 111", "MTH 161", "SDV 100"]
+      },
+      {
+        "semester": "Semester 2",
+        "recommendedCourses": ["ENG 112", "MTH 162", "CSC 201"]
+      },
+      {
+        "semester": "Semester 3",
+        "recommendedCourses": ["CSC 202", "PHY 241", "MTH 263"]
+      },
+      {
+        "semester": "Semester 4",
+        "recommendedCourses": ["PHY 242", "MTH 264", "Humanities Elective"]
+      }
+    ],
+    "application": {
+      "deadline": "March 1",
+      "term": "Fall Transfer"
+    }
+  }
+  

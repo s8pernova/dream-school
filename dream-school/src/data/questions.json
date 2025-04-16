@@ -1,0 +1,26 @@
+[
+    {
+      "id": "gpa",
+      "question": "What is your current GPA?",
+      "type": "number",
+      "placeholder": "e.g. 3.4"
+    },
+    {
+      "id": "credits",
+      "question": "How many credits have you completed?",
+      "type": "number",
+      "placeholder": "e.g. 45"
+    },
+    {
+      "id": "csc201",
+      "question": "Have you completed CSC 201?",
+      "type": "boolean"
+    },
+    {
+      "id": "term",
+      "question": "Which term do you want to transfer?",
+      "type": "select",
+      "options": ["Fall", "Spring"]
+    }
+  ]
+  
