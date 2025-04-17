@@ -1,16 +1,5 @@
 [
-    {
-      "id": "first-year",
-      "question": "Are you a first year student?",
-      "type": "boolean",
-      "placeholder": "e.g. Yes or No"
-    },
-    {
-      "id": "credits",
-      "question": "How many credits have you completed?",
-      "type": "number",
-      "placeholder": "e.g. 45"
-    },
+ 
     {
       "id": "completed_courses",
       "question": "Which of the following have you completed?",
@@ -36,13 +25,6 @@
         { "label": "EGR 122", "credits": 3 }
 
       ]
-    },
-    
-    {
-      "id": "term",
-      "question": "Which term do you want to transfer?",
-      "type": "select",
-      "options": ["Fall", "Spring"]
     }
   ]
   
