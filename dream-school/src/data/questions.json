@@ -1,9 +1,9 @@
 [
     {
-      "id": "gpa",
-      "question": "What is your current GPA?",
-      "type": "number",
-      "placeholder": "e.g. 3.4"
+      "id": "first-year",
+      "question": "Are you a first year student?",
+      "type": "boolean",
+      "placeholder": "e.g. Yes or No"
     },
     {
       "id": "credits",
@@ -12,10 +12,16 @@
       "placeholder": "e.g. 45"
     },
     {
-      "id": "csc201",
-      "question": "Have you completed CSC 201?",
-      "type": "boolean"
+      "id": "completed_courses",
+      "question": "Which of the following have you completed?",
+      "type": "checkbox",
+      "options": [
+        { "label": "ENG 111", "credits": 3 },
+        { "label": "MTH 161", "credits": 3 },
+        { "label": "SDV 100", "credits": 1 }
+      ]
     },
+    
     {
       "id": "term",
       "question": "Which term do you want to transfer?",

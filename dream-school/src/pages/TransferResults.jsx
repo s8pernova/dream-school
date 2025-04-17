@@ -12,6 +12,20 @@ Maybe "Suggested next steps" like meeting a counselor or taking specific courses
     */
 }
 
-export default function TransferResults() {
-	return <div>TransferResults page</div>;
-}
+import { useLocation } from "react-router-dom";
+
+const Results = () => {
+	const location = useLocation();
+	const { answers, totalCredits } = location.state || {};
+
+	return (
+		<div>
+			<h1>Results</h1>
+			<p>Total Credits: {totalCredits}</p>
+			<pre>{JSON.stringify(answers, null, 2)}</pre>
+		</div>
+	);
+};
+
+export default Results;
+
