@@ -11,3 +11,7 @@ GPA comparison chart or "You're on track!" message.
 Maybe "Suggested next steps" like meeting a counselor or taking specific courses.
     */
 }
+
+export default function TransferResults() {
+	return <div>TransferResults page</div>;
+}
