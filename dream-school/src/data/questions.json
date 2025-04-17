@@ -16,9 +16,25 @@
       "question": "Which of the following have you completed?",
       "type": "checkbox",
       "options": [
+        { "label": "SDV 100", "credits": 1 },
         { "label": "ENG 111", "credits": 3 },
-        { "label": "MTH 161", "credits": 3 },
-        { "label": "SDV 100", "credits": 1 }
+        { "label": "ENG 112", "credits": 3 },
+        { "label": "MTH 263 ", "credits": 4 },
+        { "label": "MTH 264 ", "credits": 4 },
+        { "label": "MTH 265 ", "credits": 4 },
+        { "label": "CSC 221 ", "credits": 3 },
+        { "label": "CSC 222 ", "credits": 4 },
+        { "label": "CSC 223 ", "credits": 4 },
+        { "label": "CSC 208 or MTH 288 ", "credits": 3 },
+        { "label": "CSC 215 ", "credits": 3 },
+        { "label": "Any UCGS Art/Humanities ", "credits": 3 },
+        { "label": "Any UCGS Art/Humanities or Lit", "credits": 3 },
+        { "label": "Any UCGS History", "credits": 3 },
+        { "label": "Any UCGS Social/Behavioral Science", "credits": 3 },
+        { "label": "BIO 101, CHEM 111, or PHY 241", "credits": 4 },
+        { "label": "EGR 121", "credits": 3 },
+        { "label": "EGR 122", "credits": 3 }
+
       ]
     },
     

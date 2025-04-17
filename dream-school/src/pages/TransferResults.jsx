@@ -22,7 +22,7 @@ const Results = () => {
 		<div>
 			<h1>Results</h1>
 			<p>Total Credits: {totalCredits}</p>
-			<pre>{JSON.stringify(answers, null, 2)}</pre>
+			
 		</div>
 	);
 };
