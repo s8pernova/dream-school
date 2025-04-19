@@ -9,7 +9,7 @@ const TransferForm = () => {
 
 	// Handle general answer updates
 	const handleAnswer = (idOrUpdater, value) => {
-		if (typeof idOrUpdater === 'function') {
+		if (typeof idOrUpdater === "function") {
 			setAnswers((prev) => idOrUpdater(prev));
 		} else {
 			setAnswers((prev) => ({ ...prev, [idOrUpdater]: value }));
@@ -44,9 +44,14 @@ const TransferForm = () => {
 	};
 
 	return (
-		<div>
-			<h1>Transfer Form Questionnaire</h1>
-			<form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
+		<div className="form-container">
+			<h1 className="form-title">Transfer Form Questionnaire</h1>
+			<form
+				onSubmit={(e) => {
+					e.preventDefault();
+					handleSubmit();
+				}}
+			>
 				{questions.map((q) => (
 					<Question
 						key={q.id}
@@ -56,7 +61,9 @@ const TransferForm = () => {
 						onCheckboxChange={handleCheckboxChange}
 					/>
 				))}
-				<button type="submit">Submit</button>
+				<button type="submit" className="default-button transfer-button">
+					Submit
+				</button>
 			</form>
 		</div>
 	);

@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Question = ({ questionData, onAnswer, onCheckboxChange }) => {
 	const { id, question, type, placeholder, options } = questionData;
 
 	const handleChange = (e) => {
 		let value = e.target.value;
-		if (type === 'boolean') value = value === 'yes';
+		if (type === "boolean") value = value === "yes";
 		onAnswer(id, value);
 	};
 
@@ -14,26 +14,25 @@ const Question = ({ questionData, onAnswer, onCheckboxChange }) => {
 	};
 
 	return (
-		<div>
-			<label>{question}</label> <br />
-			{type === 'number' && (
+		<div className="question-block">
+			<label className="question-label">{question}</label> <br />
+			{type === "number" && (
 				<input
 					type="number"
 					placeholder={placeholder}
 					onChange={handleChange}
+					className="question-input"
 				/>
 			)}
-
-			{type === 'boolean' && (
-				<select onChange={handleChange}>
+			{type === "boolean" && (
+				<select className="question-select" onChange={handleChange}>
 					<option value="">Select</option>
 					<option value="yes">Yes</option>
 					<option value="no">No</option>
 				</select>
 			)}
-
-			{type === 'select' && (
-				<select onChange={handleChange}>
+			{type === "select" && (
+				<select className="question-select" onChange={handleChange}>
 					<option value="">Select</option>
 					{options.map((opt, idx) => (
 						<option key={idx} value={opt}>
@@ -42,11 +41,14 @@ const Question = ({ questionData, onAnswer, onCheckboxChange }) => {
 					))}
 				</select>
 			)}
-
-			{type === 'checkbox' && (
-				<div>
+			{type === "checkbox" && (
+				<div className="checkbox-group">
 					{options.map((opt, idx) => (
-						<label key={idx} style={{ display: 'block' }}>
+						<label
+							key={idx}
+							className="checkbox-option"
+							style={{ display: "block" }}
+						>
 							<input
 								type="checkbox"
 								value={opt.label}

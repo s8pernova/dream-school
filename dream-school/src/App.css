@@ -1,13 +1,17 @@
 #root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
+	/* max-width: 1280px; */
+	/* padding: 2rem; */
 	text-align: center;
 
+	--primary-font: Georgia, "Times New Roman", Times, serif;
 	--primary-color: #dda300;
 	--secondary-color: #005e2c;
 	--gray: #ececec;
 }
+
+/* .border {
+	border: 2px solid red;
+} */
 
 /* NotFound Page */
 
@@ -19,35 +23,99 @@
 /* Home Page */
 
 .home-container {
-	padding: 3rem;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
-	gap: 2rem;
-	/* background-color: #fdfdfd;
-	border-radius: 25px;
-	box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.2); */
 }
 
-.start-button {
-	font-size: 2rem;
+.home-container-left {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	width: 30%;
+	font-size: 1.5rem;
+	align-items: center;
+}
+
+.welcome-text {
+	font-family: var(--primary-font);
+}
+
+.default-button {
 	background: var(--gray);
 	box-shadow: 0 5px 0 var(--secondary-color);
 	color: var(--secondary-color);
 	transition: all 0.1s ease-in-out;
+	width: 200px;
 }
-.start-button:hover {
+.default-button:hover {
 	cursor: pointer;
 	border-color: var(--primary-color);
 }
-.start-button:active {
+.default-button:active {
 	box-shadow: 0 2px 0 var(--secondary-color);
 	transform: translateY(3px);
 }
 
-.welcome-text {
-	font-size: 2rem;
+.home-image {
+	margin-left: auto;
+	right: 0;
+	width: 65vw;
+	height: 100vh;
+	object-fit: cover;
+}
+
+/* Transfer Form */
+
+.form-container {
+	background-color: white;
+	padding: 3rem;
+	max-width: 800px;
+	margin: 3rem auto;
+	border-radius: 20px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+	font-size: var(--primary-font);
+	color: var(--secondary-color);
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.transfer-button {
+	margin-top: 30px;
+}
+
+/* Questions */
+
+.question-block {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.question-label {
+	font-weight: bold;
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+	display: block;
+	color: #333;
+}
+
+.question-input,
+.question-select {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 1rem;
+	margin-top: 0.25rem;
+}
+
+input[type="checkbox"] {
+	margin-right: 10px;
 }
 
 .logo {
